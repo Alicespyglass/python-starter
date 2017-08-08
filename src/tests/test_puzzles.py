@@ -8,3 +8,19 @@ class TestClass(object):
     def test_two_elements_starting_with_vowels(self):
         x = ['john', 'david', 'omar', 'fred', 'idris', 'angela']
         assert puzzles.elements_starting_with_vowels(x) == ['omar', 'idris', 'angela']
+
+    # const n = ['a', 'b', null, null, false, 'c', null];
+    #
+    # ['a', 'b', false, 'c']
+    #
+    # const n = ['a', 'b', null, null, false, 'c', null];
+    #
+    # ['a', 'b', 'c']
+    #
+    # const n = ['dog', 'monkey', 'elephant']
+    #
+    # ['god', 'yeknom', 'tnahpele']
+    #
+    # const n = ['Bob', 'Dave', 'Clive'];
+    #
+    # ['Bob', 'Dave'], ['Bob', 'Clive'], ['Dave', 'Clive']]
