@@ -25,9 +25,19 @@ def remove_none_not_false(array):
     return answer
 
 # 4. remove instances of nil AND false from an array
+def remove_none_and_false(array):
+    answer = []
+    for element in array:
+        if element not in (None, False):
+            answer.append(element)
+    return answer
 
 # 5. don't reverse the array, but reverse every word inside it. e.g.
-# ['dog', 'monkey'] becomes ['god', 'yeknom']
+def reverse_each_word_in_array(array):
+    answer = []
+    for element in array:
+        answer.append(element[::-1])
+    return answer
 
 # 6.given an array of student names, like ['Bob', 'Dave', 'Clive']
 # give every possible pairing - in this case:

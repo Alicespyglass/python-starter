@@ -1,3 +1,4 @@
 {
+  "tests/test_puzzles.py::TestClass": true,
   "tests/test_puzzles.py::TestClass::()": true
 }
