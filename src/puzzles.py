@@ -16,8 +16,13 @@ def elements_starting_with_vowels(array):
             answer.append(element)
     return answer
 
-# 3. remove instances of null (but NOT false) from an array
-
+# 3. remove instances of None (but NOT false) from an array
+def remove_none_not_false(array):
+    answer = []
+    for element in array:
+        if element != None:
+            answer.append(element)
+    return answer
 
 # 4. remove instances of nil AND false from an array
 

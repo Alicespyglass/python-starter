@@ -10,10 +10,10 @@ class TestClass(object):
         assert puzzles.elements_starting_with_vowels(x) == ['omar', 'idris', 'angela']
 
     def test_3_remove_null_not_false(self):
-        x = ['a', 'b', null, null, false, 'c', null];
-        assert puzzles.remove_null_not_false(x) == ['a', 'b', false, 'c']
+        x = ['a', 'b', None, None, False, 'c', None];
+        assert puzzles.remove_none_not_false(x) == ['a', 'b', False, 'c']
 
-    
+
     # const n = ['a', 'b', null, null, false, 'c', null];
     #
     # ['a', 'b', 'c']
