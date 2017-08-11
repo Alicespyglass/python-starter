@@ -51,12 +51,14 @@ def permutations(array):
 # 7. discard the first 3 elements of an array,
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def discard_first_3_elements(array):
-    del array[:3])
+    del array[:3]
     return array
-  # // e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
-  #
-  # //8. add an element to the beginning of an array
-  #
+
+ # 8. add an element to the beginning of an array
+def add_element_to_beginning_or_array(array, element):
+    array.insert(0, element)
+    return array
+
   # // 9. sort an array of words by their last letter, e.g.
   #
   # // ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']

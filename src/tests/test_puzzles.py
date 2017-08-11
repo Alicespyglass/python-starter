@@ -29,9 +29,11 @@ class TestClass(object):
         x = [1, 2, 3, 4, 5, 6]
         assert puzzles.discard_first_3_elements(x) == [4, 5, 6]
 
-    # const n = [2, 3, 4, 5],
+    def test_8_add_element_to_beginning_of_array(self):
+        x = [2, 3, 4, 5]
+        element = 1
+        assert puzzles.add_element_to_beginning_or_array(x, element) == [1, 2, 3, 4, 5]
 
-# [1, 2, 3, 4, 5]
 #  ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
 
   # // 'banana' becomes 'ban'. If the string is an odd number of letters
