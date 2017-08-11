@@ -54,17 +54,16 @@ def discard_first_3_elements(array):
     del array[:3]
     return array
 
- # 8. add an element to the beginning of an array
+# 8. add an element to the beginning of an array
 def add_element_to_beginning_or_array(array, element):
     array.insert(0, element)
     return array
 
-  # // 9. sort an array of words by their last letter, e.g.
-  #
-  # // ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
-  #
-  #
-  #
+# 9. sort an array of words by their last letter, e.g.
+# ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
+def sort_elements_by_last_letter(array):
+    return sorted(array, key=lambda x: x[-1])
+
   # // 10 - cut strings in half, and return the first half, e.g.
   #
   # // 'banana' becomes 'ban'. If the string is an odd number of letters

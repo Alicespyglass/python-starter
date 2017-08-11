@@ -34,7 +34,9 @@ class TestClass(object):
         element = 1
         assert puzzles.add_element_to_beginning_or_array(x, element) == [1, 2, 3, 4, 5]
 
-#  ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
+    def test_9_sort_elements_by_last_letter(self):
+        x = ['sky', 'puma', 'maker']
+        assert puzzles.sort_elements_by_last_letter(x) == ['puma', 'maker', 'sky']
 
   # // 'banana' becomes 'ban'. If the string is an odd number of letters
   #
