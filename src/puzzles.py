@@ -48,10 +48,11 @@ def permutations(array):
     answer = [",".join(map(str, comb)) for comb in combinations(array, 2)]
     return answer
 
-
-  #
-  # // 7. discard the first 3 elements of an array,
-  #
+# 7. discard the first 3 elements of an array,
+# e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
+def discard_first_3_elements(array):
+    del array[:3])
+    return array
   # // e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
   #
   # //8. add an element to the beginning of an array

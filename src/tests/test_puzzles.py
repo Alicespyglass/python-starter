@@ -25,7 +25,10 @@ class TestClass(object):
         x = ['Bob', 'Dave', 'Clive'];
         assert puzzles.permutations(x) == ['Bob,Dave', 'Bob,Clive', 'Dave,Clive']
 
-  # // e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
+    def test_7_discard_first_3_elements(self):
+        x = [1, 2, 3, 4, 5, 6]
+        assert puzzles.discard_first_3_elements(x) == [4, 5, 6]
+
     # const n = [2, 3, 4, 5],
 
 # [1, 2, 3, 4, 5]
