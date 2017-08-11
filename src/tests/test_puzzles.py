@@ -20,7 +20,7 @@ class TestClass(object):
     def test_5_reverse_each_word_in_array(self):
         x = ['dog', 'monkey', 'elephant'];
         assert puzzles.reverse_each_word_in_array(x) == ['god', 'yeknom', 'tnahpele']
-    #
-    # const n = ['Bob', 'Dave', 'Clive'];
-    #
-    # ['Bob', 'Dave'], ['Bob', 'Clive'], ['Dave', 'Clive']]
+
+    def test_6_permutations(self):
+        x = ['Bob', 'Dave', 'Clive'];
+        assert puzzles.permutations(x) == ['Bob,Dave', 'Bob,Clive', 'Dave,Clive']

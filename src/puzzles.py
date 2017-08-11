@@ -1,4 +1,5 @@
 from IPython import embed
+from itertools import combinations
 
 # 1 - select elements starting with 'a'
 def elements_starting_with_a(array):
@@ -37,6 +38,10 @@ def reverse_each_word_in_array(array):
     answer = []
     for element in array:
         answer.append(element[::-1])
+    return answer
+
+def permutations(array):
+    answer = [",".join(map(str, comb)) for comb in combinations(array, 2)]
     return answer
 
 # 6.given an array of student names, like ['Bob', 'Dave', 'Clive']
