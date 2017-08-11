@@ -40,11 +40,30 @@ def reverse_each_word_in_array(array):
         answer.append(element[::-1])
     return answer
 
+    # 6.given an array of student names, like ['Bob', 'Dave', 'Clive']
+    # give every possible pairing - in this case:
+    # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
+    # make sure you don't have the same pairing twice,
 def permutations(array):
     answer = [",".join(map(str, comb)) for comb in combinations(array, 2)]
     return answer
 
-# 6.given an array of student names, like ['Bob', 'Dave', 'Clive']
-# give every possible pairing - in this case:
-# [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
-# make sure you don't have the same pairing twice,
+
+  #
+  # // 7. discard the first 3 elements of an array,
+  #
+  # // e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
+  #
+  # //8. add an element to the beginning of an array
+  #
+  # // 9. sort an array of words by their last letter, e.g.
+  #
+  # // ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
+  #
+  #
+  #
+  # // 10 - cut strings in half, and return the first half, e.g.
+  #
+  # // 'banana' becomes 'ban'. If the string is an odd number of letters
+  #
+  # // round up - so 'apple' becomes 'app'
