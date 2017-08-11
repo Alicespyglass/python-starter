@@ -1,0 +1,5 @@
+{
+  "src/tests/test_puzzles.py": true,
+  "tests/test_puzzles.py": true,
+  "tests/test_puzzles.py::TestClass::()::test_one": true
+}
