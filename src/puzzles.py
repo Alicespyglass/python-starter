@@ -124,13 +124,14 @@ def return_longest_word_in_array(array):
 
 # 16 - add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
-def sum_numbers_in_array(array):
+def sum_numbers_in_array_A(array):
     total = 0
     for element in array:
         total += element
     return total
 
-    # return sum(array)
+def sum_numbers_in_array_B(array):
+    return sum(array)
 
   # 17 - turn an array into itself repeated twice. So [1, 2, 3]
   # becomes [1, 2, 3, 1, 2, 3]
