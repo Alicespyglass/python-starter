@@ -107,12 +107,15 @@ def count_palindromes(array):
     return count
 
 # 14 - return the shortest word in an array
-def return_shortest_word_in_array(array):
+def return_shortest_word_in_array_A(array):
     shortest = array[0]
     for element in array:
         if len(element) < len(shortest):
             shortest = element
     return shortest
+
+def return_shortest_word_in_array_B(array):
+    return min(array, key=len)
 
 # 15 - return the longest word in an array
 def return_longest_word_in_array(array):
