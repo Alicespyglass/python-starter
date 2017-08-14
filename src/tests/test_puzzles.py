@@ -85,4 +85,7 @@ class TestClass(object):
     def test_17_repeat_list(self):
         x = [1, 2, 3]
         assert puzzles.repeat_list(x) == [1, 2, 3, 1, 2, 3]
-        
+
+    def test_19_list_integer_average(self):
+        x = [10, 15, 25]
+        assert puzzles.list_integer_average(x) == 17

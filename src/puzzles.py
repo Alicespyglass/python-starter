@@ -144,13 +144,17 @@ def sum_numbers_in_list_B(list):
 def repeat_list(list):
     return list * 2
 
-  # 18 - convert a symbol into a string
-    #   let a = Symbol();
-    # expect(questions.symbolToString(a)).toEqual('Symbol()');
+# 18 - convert a symbol into a string
+#   let a = Symbol();
+# expect(questions.symbolToString(a)).toEqual('Symbol()');
 
+# NA - Python does not have symbols. In Python, any hashable object can be used a a
+# dictionary (hash) key
 
-  # 19 - get the average from an array, rounded to the nearest integer
-  # so [10, 15, 25] should return 17
+# 19 - get the average from an array, rounded to the nearest integer
+# so [10, 15, 25] should return 17
+def list_integer_average(list):
+    return ceil(sum(list) / len(list))
 
   # 20 - get all the elements in an array, up until the first element
   # which is greater than five. e.g.
