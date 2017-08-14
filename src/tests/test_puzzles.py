@@ -57,3 +57,7 @@ class TestClass(object):
     def test_13_count_palindromes(self):
         x = ['bob', 'radar', 'eat']
         assert puzzles.count_palindromes(x) == 2
+
+    def test_14_return_shortest_word_in_array(self):
+        x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
+        assert puzzles.return_shortest_word_in_array(x) == 'a'

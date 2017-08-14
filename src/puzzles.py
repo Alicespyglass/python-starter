@@ -106,9 +106,13 @@ def count_palindromes(array):
             count += 1
     return count
 
-  # 14 - return the shortest word in an array
-    # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];
-    # expect(questions.shortestWord(a)).toEqual('a');
+# 14 - return the shortest word in an array
+def return_shortest_word_in_array(array):
+    shortest = array[0]
+    for element in array:
+        if len(element) < len(shortest):
+            shortest = element
+    return shortest
 
   # 15 - return the shortest word in an array
     # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];
