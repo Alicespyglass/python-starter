@@ -114,9 +114,14 @@ def return_shortest_word_in_array(array):
             shortest = element
     return shortest
 
-  # 15 - return the shortest word in an array
-    # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];
-    # expect(questions.longestWord(a)).toEqual('different');
+# 15 - return the longest word in an array
+def return_longest_word_in_array(array):
+    longest = array[0]
+    for element in array:
+        if len(element) > len(longest):
+            longest = element
+    return longest
+
 
   # 16 - add up all the numbers in an array, so [1, 3, 5, 6]
   # returns 15

@@ -61,3 +61,7 @@ class TestClass(object):
     def test_14_return_shortest_word_in_array(self):
         x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
         assert puzzles.return_shortest_word_in_array(x) == 'a'
+
+    def test_15_return_longest_word_in_array(self):
+        x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
+        assert puzzles.return_longest_word_in_array(x) == 'different'
