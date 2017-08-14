@@ -66,9 +66,13 @@ class TestClass(object):
         x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
         assert puzzles.return_shortest_word_in_array_B(x) == 'a'
 
-    def test_15_return_longest_word_in_array(self):
+    def test_15a_return_longest_word_in_array(self):
         x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
-        assert puzzles.return_longest_word_in_array(x) == 'different'
+        assert puzzles.return_longest_word_in_array_A(x) == 'different'
+
+    def test_15b_return_longest_word_in_array(self):
+        x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
+        assert puzzles.return_longest_word_in_array_B(x) == 'different'
 
     def test_16a_sum_numbers_in_array(self):
         x = [1, 3, 5, 6]

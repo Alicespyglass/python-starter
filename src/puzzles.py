@@ -118,12 +118,15 @@ def return_shortest_word_in_array_B(array):
     return min(array, key=len)
 
 # 15 - return the longest word in an array
-def return_longest_word_in_array(array):
+def return_longest_word_in_array_A(array):
     longest = array[0]
     for element in array:
         if len(element) > len(longest):
             longest = element
     return longest
+
+def return_longest_word_in_array_B(array):
+    return max(array, key=len)
 
 # 16 - add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
