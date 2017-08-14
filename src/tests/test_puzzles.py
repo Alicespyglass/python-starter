@@ -38,6 +38,8 @@ class TestClass(object):
         x = ['sky', 'puma', 'maker']
         assert puzzles.sort_elements_by_last_letter(x) == ['puma', 'maker', 'sky']
 
-  # // 'banana' becomes 'ban'. If the string is an odd number of letters
-  #
-  # // round up - so 'apple' becomes 'app'
+    def test_10_cut_strings_in_half(self):
+        x = 'banana'
+        y = 'apple'
+        assert puzzles.cut_strings_in_half(x) == 'ban'
+        assert puzzles.cut_strings_in_half(y) == 'app'

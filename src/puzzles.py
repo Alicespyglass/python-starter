@@ -1,5 +1,6 @@
 from IPython import embed
 from itertools import combinations
+from math import ceil
 
 # 1 - select elements starting with 'a'
 def elements_starting_with_a(array):
@@ -64,8 +65,9 @@ def add_element_to_beginning_or_array(array, element):
 def sort_elements_by_last_letter(array):
     return sorted(array, key=lambda x: x[-1])
 
-  # // 10 - cut strings in half, and return the first half, e.g.
-  #
-  # // 'banana' becomes 'ban'. If the string is an odd number of letters
-  #
-  # // round up - so 'apple' becomes 'app'
+# 10 - cut strings in half, and return the first half, e.g.
+# 'banana' becomes 'ban'. If the string is an odd number of letters
+# round up - so 'apple' becomes 'app'
+def cut_strings_in_half(string):
+    half = ceil(len(string)/2)
+    return string[:half]
