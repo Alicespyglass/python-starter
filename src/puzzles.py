@@ -72,17 +72,12 @@ def cut_strings_in_half(string):
     half = ceil(len(string)/2)
     return string[:half]
 
-  # 11 - turn a positive integer into a negative integer. A negative integer
-  # stays negative
-  #
-  #   const a = 5,
-  #
-  #     b = -7;
-  #
-  #   expect(questions.turnNegative(a)).toEqual(-5);
-  #
-  #   expect(questions.turnNegative(b)).toEqual(-7);
-
+# 11 - turn a positive integer into a negative integer. A negative integer
+# stays negative
+def turn_integers_negative(integer):
+    if integer > 0:
+        return -integer
+    return integer
 
   # 12 - turn an array of numbers into two arrays of numbers, one an array of
   # even numbers, the other an array of odd numbers

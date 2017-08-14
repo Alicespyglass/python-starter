@@ -43,3 +43,10 @@ class TestClass(object):
         y = 'apple'
         assert puzzles.cut_strings_in_half(x) == 'ban'
         assert puzzles.cut_strings_in_half(y) == 'app'
+
+    def test_11_turn_integers_negative(self):
+        x = 5
+        y = -7
+        assert puzzles.turn_integers_negative(x) == -5
+        assert puzzles.turn_integers_negative(y) == -7
+        
