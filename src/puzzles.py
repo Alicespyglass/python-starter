@@ -71,3 +71,52 @@ def sort_elements_by_last_letter(array):
 def cut_strings_in_half(string):
     half = ceil(len(string)/2)
     return string[:half]
+
+  # 11 - turn a positive integer into a negative integer. A negative integer
+  # stays negative
+  #
+  #   const a = 5,
+  #
+  #     b = -7;
+  #
+  #   expect(questions.turnNegative(a)).toEqual(-5);
+  #
+  #   expect(questions.turnNegative(b)).toEqual(-7);
+
+
+  # 12 - turn an array of numbers into two arrays of numbers, one an array of
+  # even numbers, the other an array of odd numbers
+  # even numbers come first
+  # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
+
+  # 13 - count the numbers of elements in an element which are palindromes
+  # a palindrome is a word that's the same backwards as forward
+  # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
+  # are 2 palindromes (bob and radar), so the method should return 2
+
+  # 14 - return the shortest word in an array
+    # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];
+    # expect(questions.shortestWord(a)).toEqual('a');
+
+  # 15 - return the shortest word in an array
+    # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];
+    # expect(questions.longestWord(a)).toEqual('different');
+
+  # 16 - add up all the numbers in an array, so [1, 3, 5, 6]
+  # returns 15
+
+  # 17 - turn an array into itself repeated twice. So [1, 2, 3]
+  # becomes [1, 2, 3, 1, 2, 3]
+
+  # 18 - convert a symbol into a string
+    #   let a = Symbol();
+    # expect(questions.symbolToString(a)).toEqual('Symbol()');
+
+
+  # 19 - get the average from an array, rounded to the nearest integer
+  # so [10, 15, 25] should return 17
+
+  # 20 - get all the elements in an array, up until the first element
+  # which is greater than five. e.g.
+  # [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
+  # becomes [1, 3, 5, 4, 1, 2]
