@@ -139,8 +139,10 @@ def sum_numbers_in_list_A(list):
 def sum_numbers_in_list_B(list):
     return sum(list)
 
-  # 17 - turn an array into itself repeated twice. So [1, 2, 3]
-  # becomes [1, 2, 3, 1, 2, 3]
+# 17 - turn an array into itself repeated twice. So [1, 2, 3]
+# becomes [1, 2, 3, 1, 2, 3]
+def repeat_list(list):
+    return list * 2
 
   # 18 - convert a symbol into a string
     #   let a = Symbol();

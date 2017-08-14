@@ -81,3 +81,8 @@ class TestClass(object):
     def test_16b_sum_numbers_in_list(self):
         x = [1, 3, 5, 6]
         assert puzzles.sum_numbers_in_list_B(x) == 15
+
+    def test_17_repeat_list(self):
+        x = [1, 2, 3]
+        assert puzzles.repeat_list(x) == [1, 2, 3, 1, 2, 3]
+        
