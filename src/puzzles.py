@@ -79,10 +79,20 @@ def turn_integers_negative(integer):
         return -integer
     return integer
 
-  # 12 - turn an array of numbers into two arrays of numbers, one an array of
-  # even numbers, the other an array of odd numbers
-  # even numbers come first
-  # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
+# 12 - turn an array of numbers into two arrays of numbers, one an array of
+# even numbers, the other an array of odd numbers
+# even numbers come first
+# so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
+def split_array_by_odds_and_evens(array):
+    even = []
+    odd = []
+    answer = [even,odd]
+    for element in array:
+        if element % 2 == 0:
+            even.append(element)
+        else:
+            odd.append(element)
+    return answer
 
   # 13 - count the numbers of elements in an element which are palindromes
   # a palindrome is a word that's the same backwards as forward

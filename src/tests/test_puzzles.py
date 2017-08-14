@@ -49,4 +49,8 @@ class TestClass(object):
         y = -7
         assert puzzles.turn_integers_negative(x) == -5
         assert puzzles.turn_integers_negative(y) == -7
+
+    def test_12_split_array_by_odds_and_evens(self):
+        x = [1, 2, 3, 4, 5, 6]
+        assert puzzles.split_array_by_odds_and_evens(x) == [[2, 4, 6], [1, 3, 5]]
         
