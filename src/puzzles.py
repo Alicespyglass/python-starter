@@ -3,41 +3,41 @@ from itertools import combinations
 from math import ceil
 
 # 1 - select elements starting with 'a'
-def elements_starting_with_a(array):
+def elements_starting_with_a(list):
     answer = []
-    for element in array:
+    for element in list:
         if element[0] == 'a':
             answer.append(element)
     return answer
 
 # 2 - keep only the elements that start with a vowel
-def elements_starting_with_vowels(array):
+def elements_starting_with_vowels(list):
     answer = []
-    for element in array:
+    for element in list:
         if element[0] in 'aeiou':
             answer.append(element)
     return answer
 
 # 3. remove instances of None (but NOT false) from an array
-def remove_none_not_false(array):
+def remove_none_not_false(list):
     answer = []
-    for element in array:
+    for element in list:
         if element != None:
             answer.append(element)
     return answer
 
 # 4. remove instances of nil AND false from an array
-def remove_none_and_false(array):
+def remove_none_and_false(list):
     answer = []
-    for element in array:
+    for element in list:
         if element not in (None, False):
             answer.append(element)
     return answer
 
 # 5. don't reverse the array, but reverse every word inside it. e.g.
-def reverse_each_word_in_array(array):
+def reverse_each_word_in_list(list):
     answer = []
-    for element in array:
+    for element in list:
         answer.append(element[::-1])
     return answer
 
@@ -45,25 +45,25 @@ def reverse_each_word_in_array(array):
     # give every possible pairing - in this case:
     # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
     # make sure you don't have the same pairing twice,
-def permutations(array):
-    answer = [",".join(map(str, comb)) for comb in combinations(array, 2)]
+def permutations(list):
+    answer = [",".join(map(str, comb)) for comb in combinations(list, 2)]
     return answer
 
 # 7. discard the first 3 elements of an array,
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
-def discard_first_3_elements(array):
-    del array[:3]
-    return array
+def discard_first_3_elements(list):
+    del list[:3]
+    return list
 
 # 8. add an element to the beginning of an array
-def add_element_to_beginning_or_array(array, element):
-    array.insert(0, element)
-    return array
+def add_element_to_beginning_or_list(list, element):
+    list.insert(0, element)
+    return list
 
 # 9. sort an array of words by their last letter, e.g.
 # ['sky', 'puma', 'maker'] becomes ['puma', 'maker', 'sky']
-def sort_elements_by_last_letter(array):
-    return sorted(array, key=lambda x: x[-1])
+def sort_elements_by_last_letter(list):
+    return sorted(list, key=lambda x: x[-1])
 
 # 10 - cut strings in half, and return the first half, e.g.
 # 'banana' becomes 'ban'. If the string is an odd number of letters
@@ -83,11 +83,11 @@ def turn_integers_negative(integer):
 # even numbers, the other an array of odd numbers
 # even numbers come first
 # so [1, 2, 3, 4, 5, 6] becomes [[2, 4, 6], [1, 3, 5]]
-def split_array_by_odds_and_evens(array):
+def split_list_by_odds_and_evens(list):
     even = []
     odd = []
     answer = [even,odd]
-    for element in array:
+    for element in list:
         if element % 2 == 0:
             even.append(element)
         else:
@@ -98,46 +98,46 @@ def split_array_by_odds_and_evens(array):
 # a palindrome is a word that's the same backwards as forward
 # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
 # are 2 palindromes (bob and radar), so the method should return 2
-def count_palindromes(array):
+def count_palindromes(list):
     count = 0
-    for element in array:
+    for element in list:
         reverse = element[::-1]
         if element == reverse:
             count += 1
     return count
 
 # 14 - return the shortest word in an array
-def return_shortest_word_in_array_A(array):
-    shortest = array[0]
-    for element in array:
+def return_shortest_word_in_list_A(list):
+    shortest = list[0]
+    for element in list:
         if len(element) < len(shortest):
             shortest = element
     return shortest
 
-def return_shortest_word_in_array_B(array):
-    return min(array, key=len)
+def return_shortest_word_in_list_B(list):
+    return min(list, key=len)
 
 # 15 - return the longest word in an array
-def return_longest_word_in_array_A(array):
-    longest = array[0]
-    for element in array:
+def return_longest_word_in_list_A(list):
+    longest = list[0]
+    for element in list:
         if len(element) > len(longest):
             longest = element
     return longest
 
-def return_longest_word_in_array_B(array):
-    return max(array, key=len)
+def return_longest_word_in_list_B(list):
+    return max(list, key=len)
 
-# 16 - add up all the numbers in an array, so [1, 3, 5, 6]
+# 16 - add up all the numbers in an , so [1, 3, 5, 6]
 # returns 15
-def sum_numbers_in_array_A(array):
+def sum_numbers_in_list_A(list):
     total = 0
-    for element in array:
+    for element in list:
         total += element
     return total
 
-def sum_numbers_in_array_B(array):
-    return sum(array)
+def sum_numbers_in_list_B(list):
+    return sum(list)
 
   # 17 - turn an array into itself repeated twice. So [1, 2, 3]
   # becomes [1, 2, 3, 1, 2, 3]
