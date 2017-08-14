@@ -94,10 +94,17 @@ def split_array_by_odds_and_evens(array):
             odd.append(element)
     return answer
 
-  # 13 - count the numbers of elements in an element which are palindromes
-  # a palindrome is a word that's the same backwards as forward
-  # e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
-  # are 2 palindromes (bob and radar), so the method should return 2
+# 13 - count the numbers of elements in an element which are palindromes
+# a palindrome is a word that's the same backwards as forward
+# e.g. 'bob'. So in the array ['bob', 'radar', 'eat'], there
+# are 2 palindromes (bob and radar), so the method should return 2
+def count_palindromes(array):
+    count = 0
+    for element in array:
+        reverse = element[::-1]
+        if element == reverse:
+            count += 1
+    return count
 
   # 14 - return the shortest word in an array
     # const a = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths'];

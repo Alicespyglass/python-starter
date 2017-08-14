@@ -53,4 +53,7 @@ class TestClass(object):
     def test_12_split_array_by_odds_and_evens(self):
         x = [1, 2, 3, 4, 5, 6]
         assert puzzles.split_array_by_odds_and_evens(x) == [[2, 4, 6], [1, 3, 5]]
-        
+
+    def test_13_count_palindromes(self):
+        x = ['bob', 'radar', 'eat']
+        assert puzzles.count_palindromes(x) == 2
