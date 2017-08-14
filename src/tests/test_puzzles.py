@@ -65,3 +65,7 @@ class TestClass(object):
     def test_15_return_longest_word_in_array(self):
         x = ['here', 'is', 'a', 'bunch', 'of', 'words', 'of', 'different', 'lengths']
         assert puzzles.return_longest_word_in_array(x) == 'different'
+
+    def test_16_sum_numbers_in_array(self):
+        x = [1, 3, 5, 6]
+        assert puzzles.sum_numbers_in_array(x) == 15
