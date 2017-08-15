@@ -97,3 +97,7 @@ class TestClass(object):
     def test_21_list_to_dictionary_pairs(self):
         x = ['a', 'b', 'c', 'd']
         assert puzzles.list_to_dictionary_pairs(x) == {'a': 'b', 'c': 'd'}
+
+    def test_22_list_of_words_to_list_of_letters(self):
+        x = ['cat', 'dog', 'fish']
+        assert puzzles.list_of_words_to_list_of_letters(x) == ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']

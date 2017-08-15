@@ -175,10 +175,17 @@ def list_to_dictionary_pairs(list):
     answer = {list[i]: list[i+1] for i in range(0, len(list), 2)}
     return answer
 
-  # 22 - get all the letters used in an array of words and return
-  # it as a array of letters, in alphabetical order
-  # . e.g. the array ['cat', 'dog', 'fish'] becomes
-  # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+# 22 - get all the letters used in an array of words and return
+# it as a array of letters, in alphabetical order
+# . e.g. the array ['cat', 'dog', 'fish'] becomes
+# ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+def list_of_words_to_list_of_letters(list):
+    answer = []
+    for word in list:
+        for letters in word:
+            answer.append(letters)
+    answer.sort()
+    return answer
 
   # 23 - swap the keys and values in a hash. e.g.
   # {'a' => 'b', 'c' => 'd'} becomes
