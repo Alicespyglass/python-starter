@@ -1,6 +1,8 @@
 from IPython import embed
 from itertools import combinations
 from math import ceil
+import string
+import re
 
 # 1 - select elements starting with 'a'
 def elements_starting_with_a(list):
@@ -201,11 +203,14 @@ def sum_dictionary_keys_and_values(dict):
     answer = sum(dict.keys()) + sum(dict.values())
     return answer
 
-  # 25 - take out all the capital letters from a string
-  # so 'Hello JohnDoe' becomes 'ello ohnoe'
+# 25 - take out all the capital letters from a string
+# so 'Hello JohnDoe' becomes 'ello ohnoe'
+def remove_capital_letters_from_string(str):
+    answer = re.sub('[^a-z,\s]', '', str)
+    return answer
 
   # 26 - round up a float up and convert it to an Integer,
-  # so 3.214 becomes 4
+  # so 3.214 becomes 4s
 
   # 27 - round down a float up and convert it to an Integer,
   # so 9.52 becomes 9

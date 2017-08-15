@@ -109,3 +109,7 @@ class TestClass(object):
     def test_24_sum_dictionary_keys_and_values(self):
         x = {1: 1, 2: 2}
         assert puzzles.sum_dictionary_keys_and_values(x) == 6
+
+    def test_25_remove_capital_letters_from_string(self):
+        x = 'Hello JohnDoe'
+        assert puzzles.remove_capital_letters_from_string(x) == 'ello ohnoe'
