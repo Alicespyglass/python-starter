@@ -156,7 +156,14 @@ def repeat_list(list):
 def list_integer_average(list):
     return ceil(sum(list) / len(list))
 
-  # 20 - get all the elements in an array, up until the first element
-  # which is greater than five. e.g.
-  # [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
-  # becomes [1, 3, 5, 4, 1, 2]
+# 20 - get all the elements in an array, up until the first element
+# which is greater than five. e.g.
+# [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
+# becomes [1, 3, 5, 4, 1, 2]
+def list_elements_less_than_five(list):
+    answer = []
+    for element in list:
+        if element > 5:
+          break
+        answer.append(element)
+    return answer

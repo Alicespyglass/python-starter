@@ -89,3 +89,8 @@ class TestClass(object):
     def test_19_list_integer_average(self):
         x = [10, 15, 25]
         assert puzzles.list_integer_average(x) == 17
+
+    def test_20_list_elements_less_than_five(self):
+        x = [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
+        assert puzzles.list_elements_less_than_five(x) == [1, 3, 5, 4, 1, 2]
+        
