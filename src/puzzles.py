@@ -167,3 +167,55 @@ def list_elements_less_than_five(list):
           break
         answer.append(element)
     return answer
+
+# 21 - turn an array (with an even number of elements) into a hash, by
+  # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
+  # {'a' => 'b', 'c' => 'd'}
+
+  # 22 - get all the letters used in an array of words and return
+  # it as a array of letters, in alphabetical order
+  # . e.g. the array ['cat', 'dog', 'fish'] becomes
+  # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+
+  # 23 - swap the keys and values in a hash. e.g.
+  # {'a' => 'b', 'c' => 'd'} becomes
+  # {'b' => 'a', 'd' => 'c'}
+
+  # 24 - in a hash where the keys and values are all numbers
+  # add all the keys and all the values together, e.g.
+  # {1 => 1, 2 => 2} becomes 6
+
+  # 25 - take out all the capital letters from a string
+  # so 'Hello JohnDoe' becomes 'ello ohnoe'
+
+  # 26 - round up a float up and convert it to an Integer,
+  # so 3.214 becomes 4
+
+  # 27 - round down a float up and convert it to an Integer,
+  # so 9.52 becomes 9
+
+  # 28 - take a date and format it like dd/mm/yyyy, so Halloween 2013
+  # becomes 31/10/2013
+
+  # 29 - get the domain name *without* the .com part, from an email address
+  # so alex@makersacademy.com becomes makersacademy
+
+  # 30 - capitalize the first letter in each word of a string,
+   # except 'a', 'and' and 'the'
+  # *unless* they come at the start of the start of the string, e.g.
+  # 'the lion the witch and the wardrobe' becomes
+  # 'The Lion the Witch and the Wardrobe'
+
+  # 31 - return true if a string contains any special characters
+  # where 'special character' means anything apart from the letters
+  # a-z (uppercase and lower) or numbers
+
+  # 32 - get the upper limit of a range. e.g. for the range 1..20, you
+  # should return 20
+
+  # 33 - should return true for a 3 dot range like 1...20, false for a
+  # normal 2 dot range
+
+  # 34 - get the square root of a number
+
+  # 35 - count the number of words in a file
