@@ -105,3 +105,7 @@ class TestClass(object):
     def test_23_swap_dictionary_keys_and_values(self):
         x = {'a': 'b', 'c': 'd'}
         assert puzzles.swap_dictionary_keys_and_values(x) == {'b': 'a', 'd': 'c'}
+
+    def test_24_sum_dictionary_keys_and_values(self):
+        x = {1: 1, 2: 2}
+        assert puzzles.sum_dictionary_keys_and_values(x) == 6

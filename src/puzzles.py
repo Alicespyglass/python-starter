@@ -194,9 +194,12 @@ def swap_dictionary_keys_and_values(dict):
     answer = { values:keys for keys, values in dict.items() }
     return answer
 
-  # 24 - in a hash where the keys and values are all numbers
-  # add all the keys and all the values together, e.g.
-  # {1 => 1, 2 => 2} becomes 6
+# 24 - in a hash where the keys and values are all numbers
+# add all the keys and all the values together, e.g.
+# {1 => 1, 2 => 2} becomes 6
+def sum_dictionary_keys_and_values(dict):
+    answer = sum(dict.keys()) + sum(dict.values())
+    return answer
 
   # 25 - take out all the capital letters from a string
   # so 'Hello JohnDoe' becomes 'ello ohnoe'
