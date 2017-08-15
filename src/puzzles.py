@@ -187,9 +187,12 @@ def list_of_words_to_list_of_letters(list):
     answer.sort()
     return answer
 
-  # 23 - swap the keys and values in a hash. e.g.
-  # {'a' => 'b', 'c' => 'd'} becomes
-  # {'b' => 'a', 'd' => 'c'}
+# 23 - swap the keys and values in a hash. e.g.
+# {'a' => 'b', 'c' => 'd'} becomes
+# {'b' => 'a', 'd' => 'c'}
+def swap_dictionary_keys_and_values(dict):
+    answer = { values:keys for keys, values in dict.items() }
+    return answer
 
   # 24 - in a hash where the keys and values are all numbers
   # add all the keys and all the values together, e.g.

@@ -101,3 +101,7 @@ class TestClass(object):
     def test_22_list_of_words_to_list_of_letters(self):
         x = ['cat', 'dog', 'fish']
         assert puzzles.list_of_words_to_list_of_letters(x) == ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
+
+    def test_23_swap_dictionary_keys_and_values(self):
+        x = {'a': 'b', 'c': 'd'}
+        assert puzzles.swap_dictionary_keys_and_values(x) == {'b': 'a', 'd': 'c'}
