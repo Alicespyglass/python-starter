@@ -169,8 +169,11 @@ def list_elements_less_than_five(list):
     return answer
 
 # 21 - turn an array (with an even number of elements) into a hash, by
-  # pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
-  # {'a' => 'b', 'c' => 'd'}
+# pairing up elements. e.g. ['a', 'b', 'c', 'd'] becomes
+# {'a' => 'b', 'c' => 'd'}
+def list_to_dictionary_pairs(list):
+    answer = {list[i]: list[i+1] for i in range(0, len(list), 2)}
+    return answer
 
   # 22 - get all the letters used in an array of words and return
   # it as a array of letters, in alphabetical order

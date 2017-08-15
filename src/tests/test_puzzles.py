@@ -93,4 +93,7 @@ class TestClass(object):
     def test_20_list_elements_less_than_five(self):
         x = [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
         assert puzzles.list_elements_less_than_five(x) == [1, 3, 5, 4, 1, 2]
-        
+
+    def test_21_list_to_dictionary_pairs(self):
+        x = ['a', 'b', 'c', 'd']
+        assert puzzles.list_to_dictionary_pairs(x) == {'a': 'b', 'c': 'd'}
