@@ -9,6 +9,8 @@ cd into target directory and clone project
 ```
 $ cd into/target/directory
 $ git clone git@gitlab.com:alicespyglass/python-starter.git
+or github
+$ git clone https://github.com/Alicespyglass/python-starter.git
 ```
 
 Run pytest
