@@ -290,3 +290,35 @@ def count_words_in_file(file_path):
             words = line.split()
             num_words += len(words)
     return num_words
+
+# --- tougher ones ---
+# 
+ # call an arbitrary method from a string. so if I
+ # called call_method_from_string('foobar')
+ # the method foobar should be invoked
+
+ # return true if the date is a uk bank holiday for 2014
+ # the list of bank holidays is here:
+ # https://www.gov.uk/bank-holidays
+
+ # given your birthday this year, this method tells you
+ # the next year when your birthday will fall on a friday
+ # e.g. january 1st, will next be a friday in 2016
+ # return the day as a capitalized string like 'Friday'
+
+ # in a file, total the number of times words of different lengths
+ # appear. So in a file with the text "the cat sat on the blue mat"
+ # I have 5 words which are 3 letters long, 1 which is 2 letters long
+ # and 1 that is 4 letters long. Return it as a hash in the format
+ # word_length => count, e.g. {2 => 1, 3 => 5, 4 => 1}
+
+ # implement fizzbuzz without modulo, i.e. the % method
+ # go from 1 to 100
+ # (there's no RSpec test for this one)
+
+ # print the lyrics of the song 99 bottles of beer on the wall
+ # http://www.99-bottles-of-beer.net/lyrics.html
+ # make sure you use the singular when you have one bottle of
+ # beer on the wall, and print 'no more bottles of beer on the wall'
+ # at the end.
+ # (there's no RSpec test for this one)
