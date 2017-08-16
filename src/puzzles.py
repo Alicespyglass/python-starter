@@ -282,4 +282,11 @@ def upper_limit_of_range(range):
 def number_root(number):
     return sqrt(number)
 
-  # 35 - count the number of words in a file
+# 35 - count the number of words in a file
+def count_words_in_file(file_path):
+    num_words = 0
+    with open(file_path, 'r') as f:
+        for line in f:
+            words = line.split()
+            num_words += len(words)
+    return num_words

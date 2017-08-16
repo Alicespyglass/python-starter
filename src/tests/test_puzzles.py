@@ -151,3 +151,7 @@ class TestClass(object):
     def test_34_number_root(self):
         x = 144
         assert puzzles.number_root(x) == 12
+
+    def test_35_count_words_in_file(self):
+        file_path = 'data/Lorem.txt'
+        assert puzzles.count_words_in_file(file_path) == 70
