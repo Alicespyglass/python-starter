@@ -227,8 +227,11 @@ def format_date(date):
     answer = datetime_object.strftime('%d/%m/%Y')
     return answer
 
-  # 29 - get the domain name *without* the .com part, from an email address
-  # so alex@makersacademy.com becomes makersacademy
+# 29 - get the domain name *without* the .com part, from an email address
+# so alex@makersacademy.com becomes makersacademy
+def domain_ex_dotcom(email):
+    domain = email.split('@')[1].split('.')[0]
+    return domain
 
   # 30 - capitalize the first letter in each word of a string,
    # except 'a', 'and' and 'the'

@@ -125,3 +125,8 @@ class TestClass(object):
     def test_28_format_date(self):
         x = '31 Oct 2013'
         assert puzzles.format_date(x) == '31/10/2013'
+
+    def test_29_domain_ex_dotcom(self):
+        x = 'alex@makersacademy.com'
+        assert puzzles.domain_ex_dotcom(x) == 'makersacademy'
+        
