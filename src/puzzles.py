@@ -233,11 +233,23 @@ def domain_ex_dotcom(email):
     domain = email.split('@')[1].split('.')[0]
     return domain
 
-  # 30 - capitalize the first letter in each word of a string,
-   # except 'a', 'and' and 'the'
-  # *unless* they come at the start of the start of the string, e.g.
-  # 'the lion the witch and the wardrobe' becomes
-  # 'The Lion the Witch and the Wardrobe'
+# 30 - capitalize the first letter in each word of a string,
+# except 'a', 'and' and 'the'
+# *unless* they come at the start of the start of the string, e.g.
+# 'the lion the witch and the wardrobe' becomes
+# 'The Lion the Witch and the Wardrobe'
+def title_case(string):
+    exception = ['a', 'and', 'the']
+    sentence = string.split()
+    for n, word in enumerate(sentence):
+        if word not in exception:
+            sentence[n] = sentence[n].capitalize()
+    sentence[0] = sentence[0].capitalize()
+    answer_string = " ".join(str(word) for word in sentence)
+    return answer_string
+
+
+
 
   # 31 - return true if a string contains any special characters
   # where 'special character' means anything apart from the letters

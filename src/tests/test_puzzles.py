@@ -129,4 +129,9 @@ class TestClass(object):
     def test_29_domain_ex_dotcom(self):
         x = 'alex@makersacademy.com'
         assert puzzles.domain_ex_dotcom(x) == 'makersacademy'
-        
+
+    def test_30_title_case(self):
+        x = 'the lion the witch and the wardrobe'
+        assert puzzles.title_case(x) == 'The Lion the Witch and the Wardrobe'
+
+    

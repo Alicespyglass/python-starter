@@ -1,6 +1,4 @@
 {
-  "tests/test_puzzles.py::TestClass": true,
-  "tests/test_puzzles.py::TestClass::()": true,
   "tests/test_puzzles.py::TestClass::()::test_16b_sum_numbers_in_array": true,
   "tests/test_puzzles.py::TestClass::()::test_5_reverse_each_word_in_array": true
 }
