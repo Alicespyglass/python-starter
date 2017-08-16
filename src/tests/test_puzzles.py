@@ -113,3 +113,9 @@ class TestClass(object):
     def test_25_remove_capital_letters_from_string(self):
         x = 'Hello JohnDoe'
         assert puzzles.remove_capital_letters_from_string(x) == 'ello ohnoe'
+
+    def test_26_round_up_float_to_integer(self):
+        x = 3.214
+        assert puzzles.round_up_float_to_integer(x) == 4
+
+    

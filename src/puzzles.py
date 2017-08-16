@@ -209,8 +209,10 @@ def remove_capital_letters_from_string(str):
     answer = re.sub('[^a-z,\s]', '', str)
     return answer
 
-  # 26 - round up a float up and convert it to an Integer,
-  # so 3.214 becomes 4s
+# 26 - round up a float up and convert it to an Integer,
+# so 3.214 becomes 4
+def round_up_float_to_integer(float):
+    return int(ceil(float))
 
   # 27 - round down a float up and convert it to an Integer,
   # so 9.52 becomes 9
