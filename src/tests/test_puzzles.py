@@ -147,3 +147,7 @@ class TestClass(object):
     def test_32_upper_limit_of_range(self):
         x = range(1, 20)
         assert puzzles.upper_limit_of_range(x) == 20
+
+    def test_34_number_root(self):
+        x = 144
+        assert puzzles.number_root(x) == 12

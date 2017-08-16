@@ -274,10 +274,12 @@ def true_if_special_characters(string):
 def upper_limit_of_range(range):
     return max(range) + 1
 
+# 33 - should return true for a 3 dot range like 1...20, false for a
+# normal 2 dot range
+# NA for Python
 
-  # 33 - should return true for a 3 dot range like 1...20, false for a
-  # normal 2 dot range
-
-  # 34 - get the square root of a number
+# 34 - get the square root of a number
+def number_root(number):
+    return sqrt(number)
 
   # 35 - count the number of words in a file
