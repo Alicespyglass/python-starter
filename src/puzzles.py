@@ -3,6 +3,7 @@ from itertools import combinations
 from math import *
 import string
 import re
+from datetime import datetime
 
 # 1 - select elements starting with 'a'
 def elements_starting_with_a(list):
@@ -219,8 +220,12 @@ def round_up_float_to_integer(float):
 def round_down_float_to_integer(float):
     return int(floor(float))
 
-  # 28 - take a date and format it like dd/mm/yyyy, so Halloween 2013
-  # becomes 31/10/2013
+# 28 - take a date and format it like dd/mm/yyyy, so Halloween 2013
+# becomes 31/10/2013
+def format_date(date):
+    datetime_object = datetime.strptime(date, '%d %b %Y')
+    answer = datetime_object.strftime('%d/%m/%Y')
+    return answer
 
   # 29 - get the domain name *without* the .com part, from an email address
   # so alex@makersacademy.com becomes makersacademy

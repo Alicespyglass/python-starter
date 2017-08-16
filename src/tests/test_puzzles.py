@@ -122,4 +122,6 @@ class TestClass(object):
         x = 9.52
         assert puzzles.round_down_float_to_integer(x) == 9
 
-        
+    def test_28_format_date(self):
+        x = '31 Oct 2013'
+        assert puzzles.format_date(x) == '31/10/2013'
