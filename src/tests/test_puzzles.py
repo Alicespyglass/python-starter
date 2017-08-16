@@ -130,8 +130,10 @@ class TestClass(object):
         x = 'alex@makersacademy.com'
         assert puzzles.domain_ex_dotcom(x) == 'makersacademy'
 
-    def test_30_title_case(self):
+    def test_30_title_case_a(self):
         x = 'the lion the witch and the wardrobe'
-        assert puzzles.title_case(x) == 'The Lion the Witch and the Wardrobe'
+        assert puzzles.title_case_A(x) == 'The Lion the Witch and the Wardrobe'
 
-    
+    def test_30_title_case_b(self):
+        x = 'the lion the witch and the wardrobe'
+        assert puzzles.title_case_B(x) == 'The Lion the Witch and the Wardrobe'

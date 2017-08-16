@@ -238,7 +238,7 @@ def domain_ex_dotcom(email):
 # *unless* they come at the start of the start of the string, e.g.
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
-def title_case(string):
+def title_case_A(string):
     exception = ['a', 'and', 'the']
     sentence = string.split()
     for n, word in enumerate(sentence):
@@ -248,7 +248,13 @@ def title_case(string):
     answer_string = " ".join(str(word) for word in sentence)
     return answer_string
 
-
+def title_case_B(string):
+    exception = ['a', 'and', 'the']
+    word_list = re.split(' ', string)       # re.split behaves as expected
+    final = [word_list[0].capitalize()]
+    for word in word_list[1:]:
+        final.append(word if word in exception else word.capitalize())
+    return " ".join(final)
 
 
   # 31 - return true if a string contains any special characters
