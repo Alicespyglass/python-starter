@@ -256,10 +256,18 @@ def title_case_B(string):
         final.append(word if word in exception else word.capitalize())
     return " ".join(final)
 
-
-  # 31 - return true if a string contains any special characters
-  # where 'special character' means anything apart from the letters
-  # a-z (uppercase and lower) or numbers
+# 31 - return true if a string contains any special characters
+# where 'special character' means anything apart from the letters
+# a-z (uppercase and lower) or numbers
+def true_if_special_characters(string):
+    check = string.split()
+    for word in check:
+        if word.isalnum():
+            pass
+        else:
+            return True
+            break
+    return False
 
   # 32 - get the upper limit of a range. e.g. for the range 1..20, you
   # should return 20

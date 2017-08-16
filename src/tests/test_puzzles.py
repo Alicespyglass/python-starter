@@ -137,3 +137,9 @@ class TestClass(object):
     def test_30_title_case_b(self):
         x = 'the lion the witch and the wardrobe'
         assert puzzles.title_case_B(x) == 'The Lion the Witch and the Wardrobe'
+
+    def test_31_true_if_special_characters(self):
+        x = 'There ar€ $pecial Characters !n here'
+        y = 'There are no special charact3r5'
+        assert puzzles.true_if_special_characters(x) == True
+        assert puzzles.true_if_special_characters(y) == False
