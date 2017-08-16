@@ -269,8 +269,11 @@ def true_if_special_characters(string):
             break
     return False
 
-  # 32 - get the upper limit of a range. e.g. for the range 1..20, you
-  # should return 20
+# 32 - get the upper limit of a range. e.g. for the range 1..20, you
+# should return 20
+def upper_limit_of_range(range):
+    return max(range) + 1
+
 
   # 33 - should return true for a 3 dot range like 1...20, false for a
   # normal 2 dot range

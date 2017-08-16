@@ -143,3 +143,7 @@ class TestClass(object):
         y = 'There are no special charact3r5'
         assert puzzles.true_if_special_characters(x) == True
         assert puzzles.true_if_special_characters(y) == False
+
+    def test_32_upper_limit_of_range(self):
+        x = range(1, 20)
+        assert puzzles.upper_limit_of_range(x) == 20
