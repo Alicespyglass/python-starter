@@ -118,4 +118,8 @@ class TestClass(object):
         x = 3.214
         assert puzzles.round_up_float_to_integer(x) == 4
 
-    
+    def test_27_round_down_float_to_integer(self):
+        x = 9.52
+        assert puzzles.round_down_float_to_integer(x) == 9
+
+        

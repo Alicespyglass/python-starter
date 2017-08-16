@@ -1,6 +1,6 @@
 from IPython import embed
 from itertools import combinations
-from math import ceil
+from math import *
 import string
 import re
 
@@ -214,8 +214,10 @@ def remove_capital_letters_from_string(str):
 def round_up_float_to_integer(float):
     return int(ceil(float))
 
-  # 27 - round down a float up and convert it to an Integer,
-  # so 9.52 becomes 9
+# 27 - round down a float up and convert it to an Integer,
+# so 9.52 becomes 9
+def round_down_float_to_integer(float):
+    return int(floor(float))
 
   # 28 - take a date and format it like dd/mm/yyyy, so Halloween 2013
   # becomes 31/10/2013
